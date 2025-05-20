@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: sources
+    description: "Fonte de dados"
+    database: dbt-database-444318
+    schema: dbt_dw
+    tables:
+      - name: categories
+        description: "Tabela de categoria"
+        columns:
+          - name: category_id
+            description: "ID da tabela de origem"
+          - name: category_name
+            description: "Nome da tabela de origem"
+          - name: description
+            description: "Descrição da tabela de origem"
+      - name: customers
+        description: "Tabela de clientes"
+      - name: employees
+        description: "Tabela de funcionários"
+      - name: orderdetails
+        description: "Tabela de detalhes do pedido"
+      - name: orders
+        description: "Tabela de pedidos"
+      - name: products
+        description: "Tabela de produtos"
+      - name: shippers
+        description: "Tabela de transportadoras"
+      - name: suppliers
+        description: "Tabela de fornecedores"
