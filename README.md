@@ -1,6 +1,6 @@
 ### Projeto DBT com dados de clientes e vendas.
 
- O objetivo do projeto foi simular um cenário de negócio para aplicar práticas modernas de engenharia de dados, como modelos incrementais e transformações SQL modularizadas que o dbt proporciona.
+O objetivo do projeto foi simular um cenário de negócio realista para aplicar práticas modernas de engenharia de dados utilizando o dbt, como a criação de modelos SQL reutilizáveis, modularização nas transformações, versionamento de codigo e documentação automatizada.
 
 <br>
 
@@ -28,6 +28,10 @@ Ex.
 ```
 dbt run-operation get_start_date
 ```
+
+### Fazendo testes
+`dbt test <nome do modelo teste>`
+
 ### Rodando modelos:
 `dbt run --select <nome> <argumentos opcionais>`  
 Ex.
